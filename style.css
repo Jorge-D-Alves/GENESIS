@@ -1,0 +1,74 @@
+:root {
+  /* ===== CORES ===== */
+
+  --blue: #016DD9;
+  --yellow: #FBF117;
+  --red: #E44C04;
+  --green: #84DD37;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #92a5de;
+  background: #FF0000;
+  text-shadow: 0px 0px 0 #899CD5, 1px 1px 0 #8194CD, 2px 2px 0 #788BC4, 3px 3px 0 #6F82BB, 4px 4px 0 #677AB3, 5px 5px 0 #5E71AA, 6px 6px 0 #5568A1, 7px 7px 0 #4C5F98, 8px 8px 0 #445790, 9px 9px 0 #3B4E87, 10px 10px 0 #32457E, 11px 11px 0 #2A3D76, 12px 12px 0 #21346D, 13px 13px 0 #182B64, 14px 14px 0 #0F225B, 15px 15px 0 #071A53, 16px 16px 0 #02114A, 17px 17px 0 #0B0841, 18px 18px 0 #130039, 19px 19px 0 #1C0930, 20px 20px 0 #251227, 21px 21px 20px rgba(0,0,0,1), 21px 21px 1px rgba(0,0,0,0.5), 0px 0px 20px rgba(0,0,0,.2);
+  color: #92a5de;
+}
+
+.main-game {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genius {
+  display: grid;
+  grid-template-areas: 'verde vermelho'
+  'amarelo azul';
+  grid-gap: 10px;
+  border: 5px solid #000;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+}
+
+.blue {
+  grid-area: azul;
+  background-color: var(--blue);
+  border-bottom-right-radius: 100%;
+}
+
+.red {
+  grid-area: vermelho;
+  background-color: var(--red);
+  border-top-right-radius: 100%;
+}
+
+.yellow {
+  grid-area: amarelo;
+  background-color: var(--yellow);
+  border-bottom-left-radius: 100%;
+}
+
+.green {
+  grid-area: verde;
+  background-color: var(--green);
+  border-top-left-radius: 100%;
+}
+
+.selected {
+  opacity: 0.4;
+}
+
+.bg-spring {
+  background: -webkit-linear-gradient(70deg, #beb925  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+  background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, var(--red) 60%);
+  background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+  background: linear-gradient(70deg, #beb925  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, var(--blue) 60%, var(--red) 60%);
+}
